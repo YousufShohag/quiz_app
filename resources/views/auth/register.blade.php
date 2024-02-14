@@ -16,6 +16,18 @@
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
         </div>
 
+        <!-- You are  -->
+        <div class="mt-4">
+            <x-input-label for="option" :value="__('You are')" />
+            <select name="role" id="role" class="block mt-1 w-full">
+                <option value="student" class="block mt-1 w-full">Student</option>
+                <option value="user" class="block mt-1 w-full">User</option>
+                <option value="admin" class="block mt-1 w-full">Admin</option>
+            </select>
+            <!-- <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autocomplete="username" />
+            <x-input-error :messages="$errors->get('email')" class="mt-2" /> -->
+        </div>
+
         <!-- Password -->
         <div class="mt-4">
             <x-input-label for="password" :value="__('Password')" />
